@@ -25,7 +25,7 @@ SECRET_KEY = 'p^@56+v)h8vx=h^%$sudsccc!k()rf=qyc=twp#f0kztf2)!q='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'beexchange.pythonanywhere.com']
 
 
 # Application definition
