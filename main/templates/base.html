@@ -1,0 +1,65 @@
+{% extends 'dom.html' %}
+{% load bootstrap4 %}
+
+{% block body %}
+<nav class="navbar navbar-light bg-warning fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartop" aria-controls="navbartop" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="mr-auto">
+    <a href="{% url 'home' %}" class="navbar-brand ml-3 my-1">BeExchange</a>
+  </div>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2 my-1" type="search" placeholder="Поиск по тегам" aria-label="Search">
+    <button class="btn btn-outline-dark my-1 my-sm-0" type="submit">Искать</button>
+  </form>
+  <div class="collapse navbar-collapse" id="navbartop">
+    <div class="row">
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <div class="col">Главная</div>
+        <div class="col">Курсы</div>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <div class="col">Студенты</div>
+        <div class="col">Что-то ещё</div>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <div class="col">Профиль</div>
+        <div class="col">Выход</div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- TODO ниже допилить
+  <div class="collapse navbar-collapse" id="navbartop">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Centered nav only <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown08">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div> -->
+</nav>
+<br>
+<br>
+<br>
+{% block sec1 %}     {% endblock %}
+{% block sec2 %}     {% endblock %}
+{% block sec3 %}     {% endblock %}
+{% block footer %}   {% endblock %}
+{% endblock %}
